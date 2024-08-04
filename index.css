@@ -1,6 +1,66 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.glass-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.cell:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.status-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #f0f0f0;
+}
+
+.restart-btn {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    border: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+}
+
+.restart-btn:hover {
+    background: linear-gradient(135deg, #5b86e5, #36d1dc);
 }
